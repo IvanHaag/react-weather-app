@@ -40,7 +40,9 @@ export const WeatherApp = () => {
           <h2>{weatherData.name}, {weatherData.sys.country}</h2>
           <p>La temperatura actual es {Math.floor(weatherData.main.temp - diffKelvin)}°C</p>
           <p>La codición meteorológica actual es: {weatherData.weather[0].description}</p>
-          <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}`} alt={weatherData.weather[0].description}/>
+          <div className='img-container'>
+            <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt={weatherData.weather[0].description}/>
+          </div>
         </div>
       )}
     </div>

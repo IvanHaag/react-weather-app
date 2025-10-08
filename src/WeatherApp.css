@@ -2,6 +2,9 @@
   max-width: 70%;
   margin: 0 auto;
   padding: 20px;
+  /* border: none;
+  border-radius: 20px; */
+  /* background-color: rgba(150, 150, 150, 0.5) */
 }
 
 h1{
@@ -47,6 +50,18 @@ img{
   width: 100px;
   height: auto;
   margin-top: 10px;
+}
+
+.img-container{
+  display: inline-flex;           
+  justify-content: center;
+  align-items: center;
+  width: 120px;                   
+  height: 110px;
+  border-radius: 50%;
+  background-color: rgba(150, 150, 150, 0.5);
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 900px){
